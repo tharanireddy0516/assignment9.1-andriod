@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/text_color"
+        app:showAsAction="ifRoom"
+        android:id="@+id/Text_color" />
+
+    <item android:title="@string/red"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:id="@+id/red" />
+
+    <item android:title="@string/green"
+        app:showAsAction="never"
+        android:orderInCategory="101"
+        android:id="@+id/green"/>
+
+    <item android:title="@string/blue"
+        android:orderInCategory="102"
+        app:showAsAction="never"
+        android:id="@+id/blue"/>
+
+</menu><!--menu ends here-->
+<!--A menu resource defines an application menu (Options Menu, Context Menu, or submenu) that can be inflated with MenuInflater
+    here we are taking option menu
+    A menu item contain a menu element for a Sub Menu and child of a menu or group element.
+    Resource ID is a unique resource ID  to create a new resource ID for particular item
+    title is a String resource the menu title as a string resource or raw string.Keyword.
+    showAsAction is a Keyword. When and how this item should appear as an action item in the app bar.
+    A menu item can appear as an action item only when the activity includes an app bar.
+    showAction contains if room,always,never
+    if room only place this item in the app bar if there is room for it
+    never means never place this item in the app bar. Instead, list the item in the app bar's overflow menu.
+    -->
